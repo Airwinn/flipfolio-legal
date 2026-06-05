@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flipfolio — Privacy Policy</title>
+<style>
+  :root { --paper:#F2E9D7; --ink:#2A2016; --muted:#6b5e4d; --green:#12B981; --line:#e0d6c2; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; }
+  .wrap { max-width:760px; margin:0 auto; padding:48px 24px 96px; }
+  h1 { font-size:2rem; margin:0 0 4px; letter-spacing:-0.02em; }
+  h2 { font-size:1.2rem; margin:40px 0 8px; }
+  .sub { color:var(--muted); margin:0 0 32px; }
+  a { color:#0E8E6A; }
+  code { background:#fff; border:1px solid var(--line); border-radius:6px; padding:1px 6px; font-size:.9em; }
+  .pill { display:inline-block; background:var(--green); color:#0b0b0b; font-weight:700;
+    border-radius:999px; padding:4px 12px; font-size:.8rem; }
+  table { border-collapse:collapse; width:100%; margin:12px 0; }
+  th,td { text-align:left; border-bottom:1px solid var(--line); padding:8px 10px; vertical-align:top; }
+  th { color:var(--muted); font-weight:700; font-size:.85rem; }
+  footer { margin-top:48px; color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="pill">Flipfolio</span>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Last updated: 5 June 2026</p>
+
+  <p>Flipfolio (“the app”, “we”) is a profit and ROI tracker for resellers. We built it to be
+  private by default: <strong>your inventory lives on your device</strong>, there is no account to
+  create, and we do not sell your data, show ads, or track you across other apps or websites.</p>
+
+  <p>This policy explains exactly what data is processed, when, and by whom.</p>
+
+  <h2>1. No account, local-first storage</h2>
+  <p>Flipfolio stores your flips, sales, photos and settings in a database <strong>on your device</strong>.
+  You do not sign in. We do not have a copy of your inventory on a server. Deleting the app deletes
+  your data from your device.</p>
+
+  <h2>2. Data processed when you use AI / lookup features</h2>
+  <p>A few <strong>optional</strong> features send a limited amount of data to our servers, which forward it
+  to the third-party providers below to do the work, and return the result. We do not store this content.</p>
+  <table>
+    <tr><th>Feature</th><th>What is sent</th><th>Sent to</th><th>Why</th></tr>
+    <tr>
+      <td>Scan a buy with AI</td>
+      <td>The photo(s) you choose of the item and/or receipt</td>
+      <td>Our server → OpenAI</td>
+      <td>To read the item name, price, date and other details to pre-fill the form</td>
+    </tr>
+    <tr>
+      <td>Smart-map an import</td>
+      <td>Your spreadsheet’s column headers and a few sample rows</td>
+      <td>Our server → OpenAI</td>
+      <td>To match your columns to the right fields</td>
+    </tr>
+    <tr>
+      <td>Scan a barcode</td>
+      <td>The scanned barcode number (UPC/EAN)</td>
+      <td>Our server → UPCitemdb</td>
+      <td>To look up the product name and image</td>
+    </tr>
+  </table>
+  <p>For abuse and cost protection, our server temporarily processes the network <strong>IP address</strong>
+  of the request to enforce a per-day usage limit. We retain only a per-day request count; we do not build
+  a profile from it.</p>
+  <p>Photos and receipts can contain personal information. Only send images you are comfortable sharing for
+  processing. These features are optional — the app is fully usable without them.</p>
+
+  <h2>3. Camera and photo library</h2>
+  <p>With your permission, the app uses the camera and photo library so you can attach a photo to a flip or
+  scan an item/receipt/barcode. Photos stay on your device unless you use an AI feature above. Flipfolio does
+  not use your location; a location permission string appears only because a bundled file-picker component
+  references it, and the app never requests or reads your location.</p>
+
+  <h2>4. What we do NOT collect</h2>
+  <ul>
+    <li>No account, name, email or password.</li>
+    <li>No advertising identifiers, no ad networks, no cross-app tracking.</li>
+    <li>No analytics SDK that profiles you. (If we add anonymous, aggregate crash/usage reporting in future,
+      we will update this policy first.)</li>
+    <li>We never sell or rent your data.</li>
+  </ul>
+
+  <h2>5. Third-party processors</h2>
+  <ul>
+    <li><strong>OpenAI</strong> — processes images/headers you submit to AI features.
+      <a href="https://openai.com/policies/privacy-policy" rel="noopener">OpenAI Privacy Policy</a>.
+      API inputs are not used to train their models.</li>
+    <li><strong>UPCitemdb</strong> — receives a scanned barcode to return product info.</li>
+    <li><strong>Supabase</strong> — hosts the server functions that broker the requests above.
+      <a href="https://supabase.com/privacy" rel="noopener">Supabase Privacy Policy</a>.</li>
+  </ul>
+
+  <h2>6. Data retention</h2>
+  <p>Your inventory: kept on your device until you delete it or uninstall the app. AI/lookup content: not
+  stored by us after the request completes. Rate-limit counters: a per-IP, per-day count that resets daily.</p>
+
+  <h2>7. Your rights</h2>
+  <p>Because your data is stored locally and we hold no account, you control it directly: edit or delete any
+  flip or sale in the app, export your data to CSV at any time, and remove everything by deleting the app.
+  If you are in the EEA/UK, you have rights under the GDPR; since we do not hold an identifiable copy of your
+  inventory, most requests are satisfied on-device. For any question, contact us below.</p>
+
+  <h2>8. Children</h2>
+  <p>Flipfolio is not directed to children under 13 (or the minimum age in your country) and we do not
+  knowingly collect their data.</p>
+
+  <h2>9. Security</h2>
+  <p>Requests to our servers use HTTPS. Secrets (such as the OpenAI key) live only on the server, never in the
+  app. No method of transmission is 100% secure, but we keep the data we touch minimal and transient.</p>
+
+  <h2>10. Changes</h2>
+  <p>We may update this policy; we will revise the “Last updated” date and, for material changes, note it in
+  the app or release notes.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions or requests: <a href="mailto:m.mrini9@gmail.com">m.mrini9@gmail.com</a>.</p>
+
+  <footer>© 2026 Flipfolio. This page is the official privacy policy referenced by the Flipfolio iOS and
+  Android apps.</footer>
+</div>
+</body>
+</html>
